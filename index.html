@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sravya's Web Projects</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>s
+  <header>
+    <h1>Sravya's Combined Web Projects</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#todo">To-Do App</a>
+      <a href="#products">Product Page</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a creative front-end developer passionate about building responsive and dynamic web experiences that combine clean design and smart functionality.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">🌐 Portfolio Website</div>
+    <div class="project-card">📝 To-Do List App</div>
+    <div class="project-card">🛍 Product Listing Page</div>
+  </section>
+
+  <section id="todo">
+    <h2>📝 To-Do List</h2>
+    <div class="todo-container">
+      <input id="taskInput" type="text" placeholder="Enter task..." />
+      <button onclick="addTask()">Add</button>
+      <ul id="taskList"></ul>
+    </div>
+  </section>
+
+  <section id="products">
+    <h2>🛍 Product Listing</h2>
+    <div class="controls">
+      <label for="sort">Sort By:</label>
+      <select id="sort" onchange="renderProducts()">
+        <option value="">-- Choose --</option>
+        <option value="price">Price</option>
+        <option value="rating">Rating</option>
+      </select>
+    </div>
+    <div id="productContainer" class="products"></div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
